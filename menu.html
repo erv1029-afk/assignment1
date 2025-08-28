@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kesar Ghar Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 30px;
+    }
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff8e1;
+  padding: 10px;
+  border-bottom: 2px solid #d2691e;
+}
+
+.page-nav a {
+  color: #d2691e;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  transition: color 0.3s ease;
+}
+
+.page-nav a:hover {
+  color: #8b4513;
+}
+
+    h1 {
+      text-align: center;
+      color: #8B4513;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #8B4513;
+      font-size: 2em;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      color: #d2691e;
+      font-size: 1.5em;
+      border-bottom: 2px solid #e0c097;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    /* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.dropbtn {
+  background-color: #d2691e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff8f0;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  border: 1px solid #e0c097;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #5a2e0f;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5e6d3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    .starters-box {
+      background-color: #fff;
+      border: 2px solid #e0c097;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .starter-item {
+      margin-bottom: 20px;
+    }
+
+    .starter-item h4 {
+      margin: 0;
+      color: #d2691e;
+    }
+
+    .starter-item p {
+      margin: 5px 0 0;
+      color: #333;
+    }
+
+    .section {
+      margin-bottom: 50px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dish-row, .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px dashed #e0c097;
+    }
+
+    .dish-name, .item-name {
+      font-weight: bold;
+      color: #5a2e0f;
+      width: 30%;
+    }
+
+    .dish-desc, .item-desc {
+      width: 65%;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .dish-row, .item-row {
+        flex-direction: column;
+      }
+      .dish-name, .dish-desc, .item-name, .item-desc {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="page-nav">
+  <a href="index.html">🏠 Home</a>
+  <a href="order.html">📞 Order</a>
+</nav>
+
+    <header>
+    <h1>Kesar Ghar Menu</h1>
+      <div class="dropdown">
+      <button class="dropbtn">Jump to Section ⬇️</button>
+      <div class="dropdown-content">
+        <a href="#starters">Starters</a>
+        <a href="#mains">Main Dishes</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#beverages">Beverages</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>Starters</h2>
+  <div class="starters-box">
+    <div class="starter-item">
+      <h4>Vegetable Samosas 🥟</h4>
+      <p>Golden pastries filled with spiced potatoes and peas, served with tangy chutney.</p>
+    </div>
+    <div class="starter-item">
+      <h4>Paneer Tikka 🔥</h4>
+      <p>Grilled paneer cubes marinated in yogurt and spices, served with charred veggies.</p>
+    </div>
+    <div class="starter-item">
+      <h4>Pani Puri 🌊</h4>
+      <p>Crispy puris filled with spiced potatoes and mint water—bursting with flavor.</p>
+    </div>
+    <div class="starter-item">
+      <h4>Vegetable Pakora 🧆</h4>
+      <p>Mixed veggie fritters fried in chickpea batter, rustic and crunchy.</p>
+    </div>
+    <div class="starter-item">
+      <h4>Onion Bhaji 🧅</h4>
+      <p>Spiced onion fritters, crispy and comforting—perfect with chai.</p>
+    </div>
+  </div>
+
+  <h2 id="mains">Main Dishes</h2>
+
+  <div class="section">
+    <h3>Mild 🌿</h3>
+    <div class="dish-row">
+      <div class="dish-name">Butter Chicken</div>
+      <div class="dish-desc">Creamy tomato-based curry with tender chicken, mildly spiced and rich in flavor.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Dal Makhana</div>
+      <div class="dish-desc">Slow-cooked black lentils in butter and cream, silky and comforting.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Chicken Korma</div>
+      <div class="dish-desc">A delicate blend of yogurt, nuts, and spices—luxurious and mellow.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Malai Kofta</div>
+      <div class="dish-desc">Soft paneer and potato dumplings in a creamy cashew-tomato sauce.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Kashmiri Pulao</div>
+      <div class="dish-desc">Fragrant rice with saffron, nuts, and dried fruits—sweet and aromatic.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Medium 🌶️</h3>
+    <div class="dish-row">
+      <div class="dish-name">Chicken Tikka</div>
+      <div class="dish-desc">Marinated chicken grilled to perfection with smoky spice and char.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Saag Paneer</div>
+      <div class="dish-desc">Creamed spinach with golden paneer cubes, earthy and satisfying.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Vegetable Biryani</div>
+      <div class="dish-desc">Layered basmati rice with spiced vegetables, herbs, and saffron.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Chana Masala</div>
+      <div class="dish-desc">Chickpeas simmered in a tangy tomato-onion gravy with bold spices.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Goan Fish Curry</div>
+      <div class="dish-desc">Coastal-style fish in a coconut-tamarind sauce—spicy, tangy, and tropical.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Hot 🔥</h3>
+    <div class="dish-row">
+      <div class="dish-name">Chili Paneer</div>
+      <div class="dish-desc">Crispy paneer tossed in a fiery Indo-Chinese chili sauce with peppers.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Laal Maas</div>
+      <div class="dish-desc">Rajasthani mutton curry with Mathania red chilies—intensely spicy and bold.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Lamb Vindaloo</div>
+      <div class="dish-desc">Goan-style lamb in a vinegar-chili marinade—tangy, hot, and deeply spiced.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Andhra Chili Chicken</div>
+      <div class="dish-desc">Bone-in chicken cooked with green chilies and spices—fiery and addictive.</div>
+    </div>
+    <div class="dish-row">
+      <div class="dish-name">Chicken Chettinad</div>
+      <div class="dish-desc">South Indian chicken in a roasted spice and coconut gravy—aromatic and intense.</div>
+    </div>
+  </div>
+
+  <div class="section" id="desserts">
+  <h2>Desserts 🍬</h2>
+  <div class="item-row">
+    <div class="item-name">Gulab Jamun</div>
+    <div class="item-desc">Soft milk dumplings soaked in rose-scented sugar syrup—warm, indulgent, and timeless.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Kheer</div>
+    <div class="item-desc">Creamy rice pudding slow-cooked with milk, cardamom, and saffron—garnished with nuts.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Jalebi</div>
+    <div class="item-desc">Crisp golden spirals soaked in saffron syrup—sweet, tangy, and delightfully sticky.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Besan Ladoo</div>
+    <div class="item-desc">Nutty chickpea flour balls roasted in ghee and cardamom—melt-in-your-mouth magic.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Kulfi</div>
+    <div class="item-desc">Dense, creamy frozen dessert infused with pistachio, saffron, or mango—India’s answer to ice cream.</div>
+  </div>
+</div>
+
+  <div class="section" id="beverages">
+  <h2>Beverages 🥤</h2>
+  <div class="item-row">
+    <div class="item-name">Mango Lassi</div>
+    <div class="item-desc">Sweet mango blended with yogurt and cardamom—cool, creamy, and tropical.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Nimbu Pani</div>
+    <div class="item-desc">Refreshing lemonade with black salt and cumin—India’s classic summer cooler.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Masala Chaas</div>
+    <div class="item-desc">Spiced buttermilk with mint, cumin, and coriander—light, savory, and digestive-friendly.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Masala Chai</div>
+    <div class="item-desc">Bold black tea simmered with spices and milk—aromatic, comforting, and energizing.</div>
+  </div>
+  <div class="item-row">
+    <div class="item-name">Jal Jeera</div>
+    <div class="item-desc">Tangy cumin-mint drink with black salt and tamarind—zingy, cooling, and appetite-awakening.</div>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kesar Ghar Takeout Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fff8f0; padding: 20px; max-width: 600px; margin: auto; border: 2px solid #e0c097; border-radius: 10px;">
+
+ <!-- Navigation Links -->
+  <nav style="text-align: center; margin-bottom: 20px;">
+    <a href="index.html" style="margin: 0 15px; color: #b35f1d; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="menu.html" style="margin: 0 15px; color: #b35f1d; text-decoration: none; font-weight: bold;">Menu</a>
+    </nav>
+
+<!-- Business Hours Table -->
+<div style="margin-bottom: 20px;">
+  <h3 style="color: #b35f1d; text-align: center;">Business Hours</h3>
+  <table style="width: 100%; border-collapse: collapse; background-color: #fff0e6; border: 1px solid #e0c097; border-radius: 5px;">
+    <tr style="background-color: #f8d9b6;">
+      <th style="padding: 8px; border: 1px solid #e0c097;">Day</th>
+      <th style="padding: 8px; border: 1px solid #e0c097;">Hours</th>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Monday</td>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Closed</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Tuesday–Thursday</td>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Lunch 11–3, Dinner 5–10</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Friday</td>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Lunch 11–3, Dinner 5–11</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Saturday & Sunday</td>
+      <td style="padding: 8px; border: 1px solid #e0c097;">Dinner 4–11</td>
+    </tr>
+  </table>
+</div>
+
+  <h2 style="color: #b35f1d; text-align: center;">Kesar Ghar Takeout Order</h2>
+
+  <form>
+    <!-- Name -->
+    <label for="name" style="display: block; margin-top: 15px; font-weight: bold;">Name:</label>
+    <input type="text" id="name" name="name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <!-- Pickup Time -->
+    <label for="pickup" style="display: block; margin-top: 15px; font-weight: bold;">Pickup Time:</label>
+    <input type="time" id="pickup" name="pickup" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <!-- Dish Selections -->
+    <label style="display: block; margin-top: 15px; font-weight: bold;">Select Dishes:</label>
+    <input type="text" name="dish1" placeholder="Dish 1" style="width: 100%; margin-top: 5px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+    <input type="text" name="dish2" placeholder="Dish 2" style="width: 100%; margin-top: 5px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+    <input type="text" name="dish3" placeholder="Dish 3" style="width: 100%; margin-top: 5px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+    <input type="text" name="dish4" placeholder="Dish 4" style="width: 100%; margin-top: 5px; padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <!-- Special Instructions -->
+    <label for="instructions" style="display: block; margin-top: 15px; font-weight: bold;">Special Instructions:</label>
+    <textarea id="instructions" name="instructions" rows="4" placeholder="Allergies, spice level, etc." style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" style="margin-top: 20px; background-color: #b35f1d; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+      Submit Order
+    </button>
+  </form>
+
+  <body style="font-family: 'Trebuchet MS', sans-serif; background-color: #3b0a57; color: #f28500; padding: 20px; max-width: 600px; margin: auto; border-radius: 10px;">
+
+  <h3 style="text-align: center; color: #f28500;">We’d Love Your Feedback</h2>
+  <p style="text-align: center; color: #f28500;">Tell us about your experience at Kesar Ghar</p>
+
+  <form>
+    <!-- Name -->
+    <label for="name" style="display: block; margin-top: 15px; font-weight: bold;">Your Name:</label>
+    <input type="text" id="name" name="name" style="width: 100%; padding: 10px; background-color: #f8c8dc; border: none; border-radius: 5px; color: #3b0a57;">
+
+    <!-- Visit Description -->
+    <label for="visit" style="display: block; margin-top: 15px; font-weight: bold;">Describe your visit in 3 words:</label>
+    <input type="text" id="visit" name="visit" style="width: 100%; padding: 10px; background-color: #f8c8dc; border: none; border-radius: 5px; color: #3b0a57;">
+
+    <!-- Favorite Part -->
+    <label for="favorite" style="display: block; margin-top: 15px; font-weight: bold;">What did you love most?</label>
+    <textarea id="favorite" name="favorite" rows="3" style="width: 100%; padding: 10px; background-color: #f8c8dc; border: none; border-radius: 5px; color: #3b0a57;"></textarea>
+
+    <!-- Suggestions -->
+    <label for="improve" style="display: block; margin-top: 15px; font-weight: bold;">Any suggestions for improvement?</label>
+    <textarea id="improve" name="improve" rows="3" style="width: 100%; padding: 10px; background-color: #f8c8dc; border: none; border-radius: 5px; color: #3b0a57;"></textarea>
+
+    <!-- Recommendation -->
+    <label for="recommend" style="display: block; margin-top: 15px; font-weight: bold;">Would you recommend us to a friend?</label>
+    <select id="recommend" name="recommend" style="width: 100%; padding: 10px; background-color: #f8c8dc; border: none; border-radius: 5px; color: #3b0a57;">
+      <option value="yes">Yes</option>
+      <option value="maybe">Maybe</option>
+      <option value="no">No</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button type="submit" style="margin-top: 20px; background-color: #f28500; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+      Submit Feedback
+    </button>
+  </form>
+
+
+
+</body>
+</html>
